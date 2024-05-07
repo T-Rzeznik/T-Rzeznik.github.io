@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2019 by your firstname lastname</title>
+
+<!-- This is a comment line which won't be rendered by any HTML browser -->
+
+
+<style>
+
+.title {
+  background-color: #3aa;
+  color: yellow;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 32px;
+}
+
+.sectionheading {
+  background-color: #a77;
+  color: black;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="title">Thomas Rzeznik</div>
+</div>
+
+<div class="title"> 25 Final concecpts</div>
+</div>
+
+<button class="collapsible">1. Is javascript (js) array mutable? array methods filter, indexOf, at, splice and slice.</button>
+<div class="content">
+  <p>Arrays in javascript are mutable which means that they are able to be changed or mutated after initialization. You are able to mutate arrays through functions such as splice() which removes a section of the array and replaces it with new elements, slice() which returns a subset of the array. Other functions that allow the user to work with arrays are indexOf() which will return the index of a specified element, and filter which creates a new array based on a boolean value, an example of this would be filtering all the even or odd numbers from an array.
+</p>
+</div>
+
+<button class="collapsible">2. Explain javascript array methods: push, pop, shift and unshift. Show how to use javascript array as queue and stack respectively</button>
+<div class="content">
+  <p>As stated in the answer above arrays are mutable, but arrays can also work as a stack or a queue. Since queues and stacks function differently (LIFO and FIFO) there are different functions used to treat arrays as such. For a queue, an array will work with shift(), and push(). Shift is a function that removes the first element from the array. Push is a function that adds one element to the end of the array. With these 2 functions you can easily implement a queue in javascript. To implement a stack in javascript you can use functions push() and pop(). Pop will remove the last element in the array, while push again will add an element to the end of an array. With these functions you can easily implement a stack in javascript.
+</p>
+</div>
+
+<button class="collapsible">3. show how a js object to describe a student (using three property fname, lname and age), and show an array of 3 student objects.</button>
+<div class="content">
+  <p>Objects in javascript are similar to python's dictionaries. The syntax uses {} to enclose the object's properties, along with name and value pairs. Below is how you can implement a js object.
+
+    let Student1 = {<br>
+    fname: Tommy<br>
+    lname: Rzeznik<br>
+    age: 21};<br>
+    <br>
+    Objects in a list:<br>
+    <br>
+    Let students = [{<br>
+    fname: Tommy<br>
+    lname: Rzeznik<br>
+    age: 21<br>
+    },<br>
+    {fname: Lauren<br>
+    lname: Farley<br>
+    age: 19},<br>
+    {fname: Alex<br>
+    lname: Smith<br>
+    age: 20}] ;</p>
+</div>
+
+<button class="collapsible">4. Name two differences between netlify and back4APP, and provide 3 alternatives and competitors to them.</button>
+<div class="content">
+  <p>One difference between netlify and back4APP is that netlify allows you to deploy the front end of a webpage while back4APP allows you to connect your application to their backend services. Back4APP is targeted for mobile developers to connect their apps to while netlify just allows the user to deploy a static webpage.<br>
+    <br>
+    Netlify Alternatives: GitHub Pages, Vercel, FireBase Hosting<br>
+    <br>
+    Back4APP Alternatives: FireBase, AWS Amplify, Parse Server</p>
+</div>
+
+<button class="collapsible">5. In CSS, selectors are patterns used to select the element(s) you want to style. What is a compound selector? What is an attribute selector? Provide 8 other selectors that you could use in web application. 
+</button>
+<div class="content">
+  <p>A compound selector css is a selector where you select elements with multiple selectors, such as two different classes. Compound selector will look like .div.element{ styles }. A attribute selector will select all components with that attribute it will look like a[href “link”] { styles}.<br>
+
+    8 Other selectors:<br>
+    <br>
+    * selects all elements<br>
+    p selects all elements of that type. Could be div, body, section, ect<br>
+    .class selects all elements of that class<br>
+    #id selects the element with the specified id<br>
+    .class p selects all p elements within the specified class<br>
+    .class > div selects all div elements that are a child of the class<br>
+    a:hover selects an element when the mouse is hovering over this element.<br>
+    div p selects all p elements inside divs.
+    </p>
+</div>
+
+<button class="collapsible">6. Briefly compare json, xml, yaml (“ YAML Ain’t Markup Language”), TOML and markdown languages. </button>
+<div class="content">
+  <p>JSON: Used for contact between server and application, looks like js objects, easy to read for humans. <br>
+    <br>
+    XML: Similar to html is format, used in databases and websites, easy to read for humans<br>
+    <br>
+    YAML: Used for config files, similar to JSON but more complex data structures, easy to read for humans.<br>
+    <br>
+    TOML: Used for config files, made to be minimalistic and easy to read for humans.<br>
+    <br>
+    Markdown: Used for documentation and readMe files, user friendly and easy to read for humans. Some similarities to html.
+    </p>
+</div>
+
+<button class="collapsible">7. The difference between a framework and a library lies in a concept called "inversion of control". When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed. Name two js libraries and two js framework respectively. </button>
+<div class="content">
+  <p>2 javascript libraries: <br>
+
+    jQuery: JS library designed to simplify scripting in HTML.<br>
+    <br>
+    Moment.js: JS library used to deal with time based coding in js.<br>
+    <br>
+    2 javascript frameworks:<br>
+    <br>
+    React: JS framework that is used to build interactive interfaces through reusable components. <br>
+    <br>
+    Angular: JS framework that is used to build single-page applications while providing a standard structure for developers to work with.<br>
+    </p>
+</div>
+
+<button class="collapsible">8. Differentiate javascript, typescript, transpile , ES6/7, node. Is Node a framework? Justify your answer.<br>
+    9. Differentiate CSS, javascript, node, npm, and expressjs<br>
+   
+   8 and 9. (these questions overlap so I’m including all answers here) </button>
+<div class="content">
+  <p>CSS: CSS is language used for styling in your web application. CSS can be implemented in its own file, inline, and embedded styling. CSS has a very large number of selectors so that you can style your page exactly how you want. Elements can be styled by a large number of properties, a small list: color, background color, font-size, margin, border, flex, ect.<br>
+    <br>
+    Javascript: Javascript is a 3rd generation programming language used for client side web development. Javascript is the most popular language across the entire internet. Javascript allows for interaction with the webpage getting inputs from the user allowing for changes to the DOM.<br>
+    <br>
+    TypeScript: TypeScript is an extension of javascript. Typescript adds features such as static typing, interfaces and more on top of javascript. Typescript is object oriented. Typescript is converted to javascript on execution. <br>
+    <br>
+    Transiple: Transpile is when source code is converted from one language to another. This is what happens when Typescript code is executed. Transpiling can also happen when converting newer js code into an older version.<br>
+    <br>
+    ES6/ES7: These are versions of javascript. ECMAscript is the full name for this. Some additions in ES6 include arrow functions and classes. ES7 added async/await functions. <br>
+    <br>
+    Node.js: Node is not a framework, node is what you can use to run js code. Node is a runtime environment that allows users to run server side code. You can run js code by using command: node index.js <br>
+    <br>
+    NPM: npm is part of node. The full name being node package manager. NPM is used to install packages and dependencies that you can use in your project. You can see dependencies you downloaded in the package.JSON file. You can also manually add packages to the JSON file.<br>
+    <br>
+    Express.js: Express is a framework that works with nodes. It is designed for creating web apps and API’s. Express is often used when using databases for your web application.
+    </p>
+</div>
+
+<button class="collapsible">10.Explain, yarn, npm, nvm, npx, package.json and package-lock.json files</button>
+<div class="content">
+  <p>Yarn and npm: (Grouping these because they are very similar) Yarn and npm are both package managers for javascript. They allow the user to install libraries and dependencies that they can use in their applications. Between the two there are some differences but they generally do the same thing. With this manager a package.json file will be created(more detail below). <br>
+    <br>
+    Nvm: Node version manager allows the user to change between versions of node if they need to, also allowing for the installation of npm.<br>
+    <br>
+    Npx: Node Package execute allows the user to execute javascript packages without installing them. <br>
+    <br>
+    package.JSON and pack-lock.JSON: These files are config files for your application. They are created when using npm. They include all the metadata about your project and all the dependencies are scripts used in the project. There is a slight difference between the two files. Package.json includes all the dependencies that you want to install. After running npm install, it will install all the dependencies specified in package.json and you will be able to see them downloaded in package-lock.json. Package-lock.json remains the same until you run commands such as npm install or npm update.
+    </p>
+</div>
+
+<button class="collapsible">11. Read the template file for this assignment, there is javascript statement: this.classList.toggle("active"); what does this mean?</button>
+<div class="content">
+  <p>This javascript statement adds or removes a class named active to the html element. “this” refers to the html element that is being toggled, this can be substituted for an element such as div, p, a. It is likely that this ‘active” class has css attributes made to distinguish if an element is in use or not. This function is often used with buttons or other interactive components.
+</p>
+</div>
+
+<button class="collapsible">12. What are Google Material Design and MUI Material UI?</button>
+<div class="content">
+  <p>Google Material Design is a system of guidelines and tools that support the best practices of interface design. <br>
+    <br>
+    MUI is a framework that works with react to implement material design by allowing the user to build interfaces using components and the guidelines that google material design created.</p>
+</div>
+
+<button class="collapsible">13. What are AJAX, XMLHttpRequest (XHR) object, fetch and promise, respectively? Identify 3 properties and 3 methods</button>
+<div class="content">
+  <p>AJAX: ajax stands for Asynchronous Javascript and XML. AJAX is used in web development for efficiency by using async requests without having to load the entire page first. <br>
+    <br>
+    XMLHttpRequest(XHR) : XHR is a built in JS object that allows for HTTP requests between servers and browsers. XHR is built into all modern browsers. <br>
+    <br>
+    Fetch and promise: Fetch returns a promise which represents a HTTP request made. This request is async which then returns a .then() function as a response to the request.<br>
+    <br>
+    Properties:<br>
+    onreadystatechange , responseText, status<br><br>
+    
+    Methods: <br>
+    New XMLHttpReQuest()<br>
+    abort()<br>
+    getResponseHeader()<br>
+    </p>
+</div>
+
+<button class="collapsible">14. Asynchronous, await, vs. synchronous, callback functions, blocking calls vs. nonblocking calls. </button>
+<div class="content">
+  <p>Asynchronous: Async functions and programming allows js functions to execute without waiting for the entire page to load and allows for functions to be executed at the same time. With async functions webpages are more efficient.<br><br>
+
+    Synchronous: Synchronous programming is when code executes one after the other like a queue.  JavaScript is synchronous by default and needs the use of async and await functions to become asynchronous. Synchronous pages tend to take more time to load as the page must wait to execute each function in line.<br><br>
+    
+    Await:  Await is a part of async programming. When you use await you wait for an async function to return a promise before executing. While waiting for the promise the function is “paused” and does not execute until a promise is resolved or rejected.<br><br>
+    
+     Callback Functions: Callback functions are functions that are used as parameters in other functions. They are used in async programming to handle the result of an async function. <br><br>
+    
+    Blocking calls: Blocking calls are in synchronous programming to stop executing of code until the previous function is done running. <br><br>
+    
+    Non-Blocking calls: Non Blocking calls are in async programming to continue executing functions while other functions are being executed.
+    </p>
+</div>
+
+<button class="collapsible">15. Differences among CSS, LESS, SASS (Syntactically Awesome Stylesheet)</button>
+<div class="content">
+  <p>CSS, LESS, and SASS are all used to style html. CSS is the standard styling language that has selectors, properties and their respected values. LESS takes styling a step further by adding variables, mixins and nesting. SASS also takes styling a step further by adding variables mixins and nesting. Both LESS and SASS need to be transpiled into CSS before the browser can read the files.
+</p>
+</div>
+
+<button class="collapsible">16. Responsive Web design (RWD) is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. Explain Media Queries and viewport and grid layout, flexbox.
+</button>
+<div class="content">
+  <p>Media queries are used in CSS to deal with the different devices of users, such as mobile, desktop, or tablet. The programmer can enact certain styles based on the size of the screen. Viewports also have to deal with screen size but are more specific based on how much of the page is visible within the browser.<br><br>
+
+    Gridlayout deals with how elements are sized and positioned on the screen. It divides the page into a grid of rows and columns so that developers can specify how many columns or rows elements should take up based on size of the screen.<br><br>
+    
+    Flex box provides a way for elements to align themselves dynamically within a container. Flex boxes are good because they adjust when a window size is changed. 
+    </p>
+</div>
+
+<button class="collapsible">17. arrow functions in 3 different cases
+</button>
+<div class="content">
+  <p>(1) Multiple parameter <br>
+    const  add = (x, y) => x + y;<br><br>
+    
+    (2) Single parameter, no need for ()<br>
+    const add2 = x => x + 2;<br><br>
+    
+    
+    (3) Event handler often used in react<br>
+    handleClick = () => {<br>
+        console.log(“Hello World”)<br>
+     };
+    </p>
+</div>
+
+<button class="collapsible">18. Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML. What Tailwind does is it offers more control over styling to the developers. This not only improves development speed but also improves productivity. Name three alternatives (most popular CSS frameworks) to Tailwind, and briefly compare Tailwind with them. </button>
+<div class="content">
+  <p>(1) BootStrap: BootStrap is a framework that allows developers to use pre-designed components to build a web page quickly. BootStrap is not as flexible as tailwind when it comes to creativity but provides a quick and easy way to build a webpage.<br><br>
+
+    (2) Bulma: Bulma is a framework based around Flexbox.. Similar to BootStrap the pre-designed components allow the developer to quickly create a customizable web page. Tailwind has more customizability but takes longer to learn and use effectively.<br><br>
+    
+    (3) Semantic UI: Semantic UI provides pre-designed components for developers to use with emphasis on semantic HTML markup. Semantic is very customizable and may be easier to grasp than tailwind due to tailwind’s large number of utility classes.
+    </p>
+</div>
+
+<button class="collapsible">19. MongoDB is a schema-less NoSQL document oriented database. Define the following concepts: nosql, schema, collection, document, database? </button>
+<div class="content">
+  <p>
+    NoSQL: NoSQL stands for not only sql. NoSQL still deals with databases but does it in a non-tabular way and stores data differently than relational(sql) tables.<br><br>
+    
+    Schema: A Schema in a database has to do with how data is structured in a database. In relational databases typically schemas are strict with how data is structured whereas other databases such as mongodb are not.<br><br>
+    
+    Collection: A collection is used in mongodb to store a group of documents in key-value form. Documents in a collection do not need to follow a schema. <br><br>
+    
+    Database: A database in mongodb holds all the collections of data stored in it. Collections of data contain different data within the database allowing a database to carry large amounts of data even if it is unrelated. You are able to connect your database to your code through an api which allows code to manipulate the database given the correct permissions.</p>
+</div>
+
+<button class="collapsible">21. HTTP protocols, methods, request and reponse messages, and message header fields ( https://en.wikipedia.org/wiki/List_of_HTTP_header_fields), response status codes. </button>
+<div class="content">
+  <p>HTTP protocols: HTTP protocols are used for the server to communicate with the client. These protocols are in the form of requests that the client sends to the server.<br><br>
+
+    HTTP methods: <br>
+        -GET is used to get data from the server.<br>
+        -POST is used to send data to the server and create a new instance with the data.<br>
+        -PUT is used to update existing data in the server<br>
+        -DELETE is used to delete data in the server<br><br>
+        
+    Request and response messages: A HTTP request is when the client is requesting data from the server. A request will include what type of request it is such as a GET request, along with the url being fetched from, and a header of information to go with the get request. A Response message is when the server responds to a request from the client. Response messages often come with a note saying if the request was fulfilled or failed.<br><br>
+    
+    HTTP Message header fields: These header fields are used in both request and response messages and are used to provide information or context for what is being requested/responded.<br><br>
+    
+    HTTP Response status codes: These are codes that come along with responses from the server. They provide information on the response in regards to failure, success, or any other issues that may have happened. 404 Not Found is an example of this.
+    </p>
+</div>
+
+<button class="collapsible">22. What is restful services? What is restful API endpoints? What is routing?restful api, client, clean url, resource and endpoints?</button>
+<div class="content">
+  <p>Restful services: REST stands for Representational State Transfer. Restful services are web services that separate client and server. They are often used to create apis for web apps. <br><br>
+
+    Restful API endpoints: An endpoint is the url or application to where the api will be being used. This endpoint will be able to use and interact with the api allowing for use of HTTP methods.<br><br>
+    
+    Routing: Routing deals with clients requests and URLs. Routing takes client requests and updates the url to achieve the given request. Routing is often used in the front end to display different content on a page.<br><br>
+    
+    Restful API: A restful API is a web service that allows clients to interact with the server and perform SCRUD operations through HTTP requests.<br><br>
+    
+    Client: Client is the system being used to communicate with the server. Clients can be your own computer, a web browser, an application, or even other servers communicating.<br><br>
+    
+    Clean Url: A clean url is a url that is easy to read for humans and doesn't contain a messy pattern of symbols. A clean url is efficient and easy for people to use and remember.<br><br>
+
+    Resource: A resource is data that can be accessed and changed through the API.<br><br>
+    
+    Endpoint: an endpoint is the url in which clients will interact with, specifically clients will interact with the resources within the endpoint. 
+    </p>
+</div>
+
+<button class="collapsible">23. The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE, options, head, trace and connect. Define each of them. </button>
+<div class="content">
+  <p>POST: Uploads data to the server<br><br>
+
+    GET: retrieves data from the server<br><br>
+    
+    PUT: Updates existing data (or target) in the server<br><br>
+    
+    PATCH: Partial updates to a resource<br><br>
+    
+    DELETE: Deletes a resource in the server<br><br>
+    
+    OPTIONS: Describes communications options for the resource being targeted<br><br>
+    
+    HEAD: Same as GET request but without response body<br><br>
+    
+    TRACE: Performs a loop-back test for the path of the resource being targeted.<br><br>
+    
+    CONNECT: Establishes a connection to the server, identified by the target resource</p>
+</div>
+
+<button class="collapsible">24. What are Javascript object, json string, JSON.parse vs. JSON.stringify, respectively?</button>
+<div class="content">
+  <p>JavaScript Object: An object in JavaScript is a type of variable that stores data in key-value pairs. These values can be any data type and different key-values do not have to have the same data type. They are very similar to dictionaries in python. <br><br>
+
+    JSON string: JSON is a file format that is used to hold data. JSON string is just a string used to hold data but in JSON form. JSON form is very similar to a JavaScript Object as data is allocated using {} with key-value pairs.<br><br>
+    
+    JSON.parse(): JSON.parse() is a JavaScript function that takes a JSON string and converts it into a JavaScript object. <br><br>
+    
+    JSON.stringify():  JSON.stringify() is a JavaScript function that takes a JavaScript object and converts it into a JSON string.</p>
+    
+</div>
+
+<button class="collapsible">25. Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos. What is same-origin policy?</button>
+<div class="content">
+  <p>Same-origin policy has to deal with what scripts can access on the web. The policy states that scripts can have access to any page with the same origin. An origin is defined by the webpages URI scheme, host name, and port number. The reason this was implemented was to prevent attacks on other webpages and to protect sensitive information.
+</p>
+</div>
+
+<button class="collapsible">26. Each component in React has a lifecycle which you can monitor and manipulate during its three main phases. The three phases are: Mounting, Updating, and Unmounting. Explain each of these three phases are about. 
+</button>
+<div class="content">
+  <p>Mounting: Mounting is the phases of a react component to which the component is first constructed and rendered on a webpage. This is the initialization phase.<br><br>
+
+    Updating: Updating phase of a react component is when the component is in use and is still being rendered. Generally react components are interactive and rendering of the component is updated as the user interacts with the page. React components often use useState which allows components to update their rendering and presence in the DOM. <br><br>
+    
+    Unmounting: UnMounting is when a react component is no longer in use on the page. The component is removed from the DOM. 
+    
+    </p>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- End of 25 final concepts-->
+
+<div class="title"> Top 6 most useful concepts I have learned from each of the six components</div>
+</div>
+
+<div class="sectionheading"> PowerBI (Feel free to skip this part. I did it as an example! Focus on the rest of the sections!)</div>
+
+<button class="collapsible">What is PowerBI?</button>
+<div class="content">
+  <p>Power BI is a business analytics solution that lets you?visualize?your data and share insights across your organization, or embed them in your app or website. Connect to hundreds of data sources and bring your data to life with live dashboards and reports.</p>
+</div>
+
+<button class="collapsible">What is data wrangling? </button>
+<div class="content">
+  <p> Data wrangling, sometimes referred to as data munging, is the process of transforming and mapping data from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics.</p>
+</div>
+
+<button class="collapsible">What data sources can Power BI connect to? </button>
+<div class="content">
+	<p>The list of data sources for Power BI is extensive, grouped into the following:
+		<ol>
+			<li>Files: Data can be imported from Excel (.xlsx, xlxm), Power BI Desktop files (.pbix) and Comma Separated Value (.csv). </li>
+			<li>Content Packs: It is a collection of related documents or files that are stored as a group. In Power BI, there are two types of content packs, firstly those from services providers like Google Analytics, Marketo or Salesforce and secondly those created and shared by other users in your organization. </li>
+			<li>Connectors to databases and other datasets such as Azure SQL, Databaseand SQL, Server Analysis Services tabular data, etc.</li>
+		</ol>
+		</p>
+
+</div>
+
+<button class="collapsible">What is DAX?</button>
+<div class="content">
+  <p>To do basic calculation and data analysis on data in power pivot, we use Data Analysis Expression (DAX). It is formula language used to compute calculated column and calculated field. DAX works on column values.
+DAX can not modify or insert data. We can create calculated column and measures with DAX  but we can not calculate rows using DAX.</p>
+</div>
+
+<button class="collapsible">What is Power Query? </button>
+<div class="content">
+  <p>Power query is a ETL Tool used to shape, clean and transform data using intuitive interfaces without having to use coding. It helps the user to: Import Data from wide range of sources from files, databases, big data, social media data, etc;
+join and append data from multiple data sources. Shape data as per requirement by removing and adding data.</p>
+</div>
+
+<button class="collapsible">Which language is used in Power Query? </button>
+<div class="content">
+  <p>A new programming language is used in power query called M-Code. It is easy to use and similar to other languages. M-code is case sensitive language.</p>
+</div>
+
+
+<div class="sectionheading"> Front End Web App Development</div>
+
+<button class="collapsible">HTML</button>
+<div class="content">
+  <p>A markup for creating a webpage</p>
+</div>
+
+<button class="collapsible">CSS</button>
+<div class="content">
+  <p> CSSÂ stands for Cascading Style Sheets.Â CSSÂ describes how HTML elements are to be displayed on screen, paper, or in other media.Â CSSÂ saves a lot of work. It can control the layout of multiple web pages all at once</p>
+</div>
+
+<button class="collapsible">Javascript </button>
+<div class="content">
+  <p>an object-oriented computer programming language commonly used to create interactive effects within web browsers</p>
+</div>
+
+
+<!-- start from here, Copy the following lines and paste for Excel, Access and PPT under the end --> 
+<div class="sectionheading"> Excel Concepts</div>
+
+<button class="collapsible">conditional formatting</button>
+<div class="content">
+  <p>Brings out the patterns of the universe, as captured by your spreadsheet</p>
+</div>
+
+<button class="collapsible">Data Filtering</button>
+<div class="content">
+
+<button class="collapsible">Sorting and Filtering</button>
+<div class="content">
+  <p>Saves time and makes spreadsheet more effective.</p>
+</div>
+
+<button class="collapsible">Basic Math</button>div class="content">
+
+<button class="collapsible">Excel Charts </button>
+<div class="content">
+  
+<button class="collapsible">Excel Formulas</button>
+<div class="content">
+
+<div class="sectionheading"> Access Concepts</div>
+
+<button class="collapsible">Importing & Exporting of other Microsoft Office</button>
+<div class="content">
+
+<button class="collapsible">Ideal for Indivdual users</button>
+<div class="content">
+  
+<button class="collapsible">Creates and Manages databases</button>
+
+<button class="collapsible">Web Database publishing</button>
+<div class="content">
+ 
+<button class="collapsible">User friendly, "Tell Me" Feature </button>
+<div class="content">
+  <p>Works like an assistant, helps users complete task on hand quickly</p>
+</div>
+
+<button class="collapsible">Report View</button>
+<div class="content">
+
+<div class="sectionheading"> PPT Concepts</div>
+
+<button class="collapsible">Formatting</button>
+<div class="content">
+
+<button class="collapsible">Presentation Playback</button>
+<div class="content">
+
+<button class="collapsible">Backstage View</button>
+<div class="content">
+
+<button class="collapsible">SmartArt Diagram</button>
+<div class="content">
+
+<button class="collapsible">Transitions & Animations</button>
+<div class="content">
+
+<button class="collapsible">Cropping Images</button>
+<div class="content">
+
+<div class="sectionheading"> Word Concepts</div>
+
+<button class="collapsible">style</button>
+<div class="content">
+
+<button class="collapsible">template</button>
+<div class="content">
+
+<button class="collapsible">Contextual Tabs</button>
+<div class="content">
+
+<button class="collapsible">Nonprinting character</button>
+<div class="content">
+
+<button class="collapsible">Edit mode </button>
+<div class="content">
+
+<button class="collapsible">Tab stop and Tab Key</button>
+<div class="content">
+<!-- end here, Copy -->
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+
+<div id="root"></div>
+
+<script>
+
+    /*
+const Example = () => {
+    return React.createElement("div", null, "Hello, React!");
+};
+    
+ReactDOM.render(React.createElement(Example), document.getElementById("root"));
+*/
+    
+    
+const root = ReactDOM.createRoot(document.getElementById('root'));
+    
+root.render(<h1>Hello, worlddddddd!</h1>);
+
+    
+</script>
